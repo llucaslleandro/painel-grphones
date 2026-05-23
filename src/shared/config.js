@@ -7,8 +7,8 @@ export const CONFIG = {
   // Identidade da Loja
   storeName: 'GR Phones',
   nome_lojista: 'Gustavo', // Nome para saudação personalizada no dashboard
-  storeLogo: 'assets/images/grphones-logo.png', // Logo da loja (usada no onboarding)
-  favicon: 'assets/images/grphones-logo.png',    // Favicon da aba do navegador (aceita .png, .ico, .svg)
+  storeLogo: '/assets/images/grphones-logo.jpeg', // Logo da loja (usada no onboarding)
+  favicon: '/assets/images/grphones-logo.jpeg',    // Favicon da aba do navegador (aceita .png, .ico, .svg)
   storeTagline: 'Encontre o celular ideal para você',
 
   // Cores da Marca
@@ -28,7 +28,7 @@ export const CONFIG = {
     {
       name: 'Gustavo',
       phone: '5579996425949',
-      avatar: 'assets/images/grphones-logo.png',
+      avatar: '/assets/images/grphones-logo.jpeg',
       message: 'Olá! Vim pela vitrine da GR Phones e quero ajuda para escolher um celular.'
     }
   ],
@@ -76,12 +76,12 @@ export const CONFIG = {
   // Para Mobile (Opcional): tamanho recomendado 600x600px (Formato Quadrado 1:1)
   // Se "imageMobile" não for enviada, a de desktop é usada em todas as telas
   banners: [
-    { image: 'assets/images/01 (DESKTOP).png', imageMobile: 'assets/images/01 (MOBILE).png', alt: '' },
-    { image: 'assets/images/02 (DESKTOP).png', imageMobile: 'assets/images/02 (MOBILE).png', alt: '' },
-    { image: 'assets/images/03 (DESKTOP).png', imageMobile: 'assets/images/03 (MOBILE).png', alt: '' },
-    { image: 'assets/images/04 (DESKTOP).png', imageMobile: 'assets/images/04 (MOBILE).png', alt: '' },
-    { image: 'assets/images/05 (DESKTOP).png', imageMobile: 'assets/images/05 (MOBILE).png', alt: '' },
-    { image: 'assets/images/06 (DESKTOP).png', imageMobile: 'assets/images/06 (MOBILE).png', alt: '', mobileOnly: true },
+    { image: '/assets/images/01 (DESKTOP).png', imageMobile: '/assets/images/01 (MOBILE).png', alt: '' },
+    { image: '/assets/images/02 (DESKTOP).png', imageMobile: '/assets/images/02 (MOBILE).png', alt: '' },
+    { image: '/assets/images/03 (DESKTOP).png', imageMobile: '/assets/images/03 (MOBILE).png', alt: '' },
+    { image: '/assets/images/04 (DESKTOP).png', imageMobile: '/assets/images/04 (MOBILE).png', alt: '' },
+    { image: '/assets/images/05 (DESKTOP).png', imageMobile: '/assets/images/05 (MOBILE).png', alt: '' },
+    { image: '/assets/images/06 (DESKTOP).png', imageMobile: '/assets/images/06 (MOBILE).png', alt: '', mobileOnly: true },
   ],
 
   // Intervalo de rotação dos banners em ms (padrão: 5 segundos)
@@ -106,8 +106,6 @@ export function applyTheme() {
       link.rel = 'icon';
       document.head.appendChild(link);
     }
-    const isDashboard = window.location.pathname.includes('/src/dashboard/');
-    const prefix = isDashboard ? '../../' : '';
-    link.href = prefix + CONFIG.favicon;
+    link.href = CONFIG.favicon;
   }
 }

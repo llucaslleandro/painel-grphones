@@ -37,8 +37,8 @@ const COORDS = {
   dataPagamento: { x: 155, y: 140 }
 };
 
-const TEMPLATE_URL_NOVO = '../../assets/images/recibo-template-novo.png';
-const TEMPLATE_URL_SEMINOVO = '../../assets/images/recibo-template-seminovo.png';
+const TEMPLATE_URL_NOVO = '/assets/images/recibo-template-novo.png';
+const TEMPLATE_URL_SEMINOVO = '/assets/images/recibo-template-seminovo.png';
 
 export function initReceiptModal() {
   const modal = document.getElementById('modal-recibo');

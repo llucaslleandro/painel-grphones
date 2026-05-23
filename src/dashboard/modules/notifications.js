@@ -1,7 +1,7 @@
 import { showNotification } from './ui.js';
 
 const SEEN_ORDERS_KEY = 'vendly_notified_orders';
-const NOTIFICATION_SOUND_URL = '../../assets/sounds/neworder_notification.mp3'; // Tecnologia Bell 1 (Pixabay 445873 mirror)
+const NOTIFICATION_SOUND_URL = '/assets/sounds/neworder_notification.mp3'; // Tecnologia Bell 1 (Pixabay 445873 mirror)
 
 let seenOrderIds = new Set();
 const audio = new Audio(NOTIFICATION_SOUND_URL);
