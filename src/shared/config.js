@@ -5,10 +5,10 @@
 
 export const CONFIG = {
   // Identidade da Loja
-  storeName: 'Black Phones',
-  nome_lojista: 'Júlio', // Nome para saudação personalizada no dashboard
-  storeLogo: 'assets/images/logo-1080X1080.png', // Logo da loja (usada no onboarding)
-  favicon: 'assets/images/favicon-48X48.png',    // Favicon da aba do navegador (aceita .png, .ico, .svg)
+  storeName: 'GR Phones',
+  nome_lojista: 'Gustavo', // Nome para saudação personalizada no dashboard
+  storeLogo: 'assets/images/grphones-logo.png', // Logo da loja (usada no onboarding)
+  favicon: 'assets/images/grphones-logo.png',    // Favicon da aba do navegador (aceita .png, .ico, .svg)
   storeTagline: 'Encontre o celular ideal para você',
 
   // Cores da Marca
@@ -23,19 +23,13 @@ export const CONFIG = {
   },
 
   // WhatsApp
-  whatsappNumber: '5579999662466', // sem +
+  whatsappNumber: '5579996425949', // sem +
   whatsappContacts: [
     {
-      name: 'Júlio',
-      phone: '5579999662466',
-      avatar: 'assets/images/avatar-julio.png',
-      message: 'Olá! Vim pela vitrine da Black Phones e quero ajuda para escolher um celular.'
-    },
-    {
-      name: 'Rony',
-      phone: '5579981188632',
-      avatar: 'assets/images/avatar-rony.png',
-      message: 'Olá! Vim pela vitrine da Black Phones e quero ajuda para escolher um celular.'
+      name: 'Gustavo',
+      phone: '5579996425949',
+      avatar: 'assets/images/grphones-logo.png',
+      message: 'Olá! Vim pela vitrine da GR Phones e quero ajuda para escolher um celular.'
     }
   ],
 
@@ -75,7 +69,7 @@ export const CONFIG = {
   },
 
   // Google Apps Script API
-  apiBaseUrl: 'https://script.google.com/macros/s/AKfycbwyOpjmtMMndSNMKee0ekW4Fdsk2Q6G9J7FmEUesaJwc0_ClUZ0evQsyrd67jLxNCHy/exec',
+  apiBaseUrl: 'https://script.google.com/macros/s/AKfycbwRwahYNgCGqKQzo1VLBCt7aQQhrY-t8yvv7CwTeF_tXcSXbbIZW86marGcuM1AaQ8/exec',
 
   // Banners do Carrossel
   // Para Desktop: tamanho recomendado 1200x400px (proporção 3:1)
